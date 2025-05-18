@@ -1,6 +1,6 @@
 # 自动注册插件
-
-最新版本:[![Download](https://api.bintray.com/packages/hellobilly/android/AutoRegister/images/download.svg)](https://bintray.com/hellobilly/android/AutoRegister/_latestVersion)
+本项目参考下面的这个库，使用新版api实现类似功能。
+原有库:[![Download](https://api.bintray.com/packages/hellobilly/android/AutoRegister/images/download.svg)](https://bintray.com/hellobilly/android/AutoRegister/_latestVersion)
 
 [原理说明](https://juejin.im/post/5a2b95b96fb9a045284669a9)
 
@@ -87,44 +87,9 @@ autoregister {
 ```
 更新日志：
 
-### 2018-08-18 V1.4.1
+### 2025-05-18
+参考
 
-支持增量编译及其开关（默认开启，可通过配置`cacheEnabled = false`来关闭增量编译，[参考demo](https://github.com/luckybilly/AutoRegister/blob/master/app/build.gradle)）
-
-### 2018-05-18 V1.3.0
-
-修复gradlew build命令同时打debug和release包时，release包中注册的代码重复的问题
-
-### 2018-03-12 V1.2.0
-
-解决同时编译多个application module(点击Build -> Rebuild/Build APKs)时出现错误注册的问题
-
-### 2018-01-15 V1.1.3
-
-解决windows的兼容性问题
-
-### 2018-01-09 V1.1.0
-
-兼容java8
-
-### 2017-12-17 V1.0.5
-1. 从本仓库中删除为[ARouter](https://github.com/alibaba/ARouter)定制的路由自动注册插件，已提供ARouter专用精简版路由自动注册插件并提交[PR](https://github.com/alibaba/ARouter/pull/254)到ARouter仓库
-2. 解决使用继承后，scanSuperClasses指定的类本身不会被自动注册的bug，并升级为V1.0.5
-        
-        
-        scanSuperClasses 参数指定的父类不需要自动添加到exclude中
-        抽象类不会被添加到自动注册列表。
-
-### 2017-12-06 
-
-新增[ARouter](https://github.com/alibaba/ARouter)定制的路由自动注册插件:auto-register-for-arouter
-
-        classpath 'com.billy.android:auto-register-for-arouter:1.0.0'
-        apply plugin: 'auto-register-for-arouter'
-
-### 2017-11-21 V1.0.4
-    生成的注册代码不再局限于static块中，可以在任意方法(codeInsertToMethodName)中
-    需要注意： codeInsertToMethodName 与 registerMethodName 必须同时为static或非static
  
  
     
