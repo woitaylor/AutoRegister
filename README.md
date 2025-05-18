@@ -1,5 +1,5 @@
 # 自动注册插件
-本项目参考下面的这个库，使用新版api实现类似功能。
+本项目参考下面的这个库，使用AGP8.0+新版api实现类似功能。
 [原有库](https://github.com/luckybilly/AutoRegister)
 
 ## 前言
