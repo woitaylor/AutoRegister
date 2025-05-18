@@ -1,6 +1,6 @@
 # 自动注册插件
 本项目参考下面的这个库，使用新版api实现类似功能。
-原有库:[![Download](https://api.bintray.com/packages/hellobilly/android/AutoRegister/images/download.svg)](https://bintray.com/hellobilly/android/AutoRegister/_latestVersion)
+[原有库](https://bintray.com/hellobilly/android/AutoRegister)
 
 [原理说明](https://juejin.im/post/5a2b95b96fb9a045284669a9)
 
